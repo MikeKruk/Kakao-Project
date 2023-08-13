@@ -1,0 +1,114 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+/* основа */
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  height: 1000px;
+}
+
+.pic {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0 10px;
+}
+
+
+
+.aboutUs-pic__item {
+  margin-left: 30px;
+}
+
+.container__aboutUs {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.aboutUs__inner {
+  display: flex;
+}
+
+.aboutUs__column {
+  text-align: center;
+}
+
+
+
+.aboutUs__text {
+    font-size: 20px;
+  }
+  
+.container__navbar {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 500;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: burlywood;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar_scrolled {
+  position: fixed;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+}
+
+.navbar .container__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo__img {
+  width: 70px;
+}
+
+.navbar__nav {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__nav li {
+  display: inline-block;
+}
+
+.navbar__nav li a {
+  padding: 10px;
+  color: rgb(8, 8, 8);
+  opacity: 0.7;
+  text-decoration: none;
+  transition: all 0.9s ease-out;
+}
+
+.navbar__nav li a:hover {
+  opacity: 1;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    top: -50px;
+  }
+
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
